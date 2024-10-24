@@ -19,7 +19,7 @@ class ReversePrint(PrintContent):
         print(content[::-1])
 
 
-def get_print_class(method_type: str):
+def get_print_class(method_type: str) -> PrintContent:
     if method_type == "console":
         return ConsolePrint()
     elif method_type == "reverse":

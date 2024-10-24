@@ -17,7 +17,7 @@ class ReverseDisplay(DisplayContent):
         print(content[::-1])
 
 
-def get_display_class(method_type: str):
+def get_display_class(method_type: str) -> DisplayContent:
     if method_type == "console":
         return ConsoleDisplay()
     elif method_type == "reverse":
